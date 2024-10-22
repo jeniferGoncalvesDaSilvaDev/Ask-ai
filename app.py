@@ -5,7 +5,7 @@ from utils import formatar_resposta
 import os
 from dotenv import load_dotenv
 from PIL import Image
-
+my_secret = os.environ['OPEN_AI_API_KEY']
 # Carregar variáveis de ambiente
 load_dotenv()
 
