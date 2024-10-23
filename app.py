@@ -5,10 +5,11 @@ from utils import formatar_resposta
 import os
 from dotenv import load_dotenv
 from PIL import Image
-my_secret = os.environ['OPEN_AI_API_KEY']
+import openai
 # Carregar variáveis de ambiente
 load_dotenv()
-
+my_secret = os.environ['OPEN_AI_API_KEY']
+openai.api_key = my_secret
 # Configuração da página
 st.set_page_config(layout="wide", page_title="Agent AI - AI2SQL")
 
